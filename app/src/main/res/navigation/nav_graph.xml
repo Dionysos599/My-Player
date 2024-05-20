@@ -11,6 +11,9 @@
         <action
             android:id="@+id/action_homeFragment_to_playlistFragment"
             app:destination="@id/playlistFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_playlistFragment2"
+            app:destination="@id/playlistFragment" />
     </fragment>
 
     <fragment

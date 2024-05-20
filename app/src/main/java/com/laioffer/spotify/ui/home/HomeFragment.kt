@@ -26,9 +26,9 @@ class HomeFragment : Fragment() {
             setContent {
                 MaterialTheme(colors = darkColors()){
                     HomeScreen(viewModel, onTap = {
-                        Log.d("HomeFragment", "We tapped ${it.name}")
                         val direction = HomeFragmentDirections.actionHomeFragmentToPlaylistFragment(it)
                         findNavController().navigate(directions = direction)
+                        Log.d("HomeFragment", "${it.name} tapped.")
                     })
                 }
             }
