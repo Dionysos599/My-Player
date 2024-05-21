@@ -18,6 +18,7 @@ class PlaylistFragment : Fragment() {
     private val navArgs by navArgs<PlaylistFragmentArgs>()
     private val viewModel: PlaylistViewModel by viewModels()
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,6 +27,9 @@ class PlaylistFragment : Fragment() {
         return ComposeView(requireContext()).apply {
             setContent {
                 MaterialTheme(colors = darkColors()) {
+                    PlaylistScreen(
+                        playlistViewModel = viewModel
+                    )
                 }
             }
         }
