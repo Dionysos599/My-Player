@@ -112,7 +112,6 @@ private fun Song(song: Song, isPlaying: Boolean) {
     }
 }
 
-
 @Composable
 private fun PlaylistHeader(album: Album) {
     Column {
@@ -143,7 +142,7 @@ private fun Cover(
         Box(
             modifier = Modifier.fillMaxWidth()
         ) {
-            Icon(
+            Icon( // Favorite Icon
                 modifier = Modifier
                     .size(28.dp)
                     .align(Alignment.TopEnd).
